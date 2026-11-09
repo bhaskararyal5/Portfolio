@@ -1,14 +1,32 @@
-import { site } from "@/lib/data";
+import { site, about, education, facts } from "@/lib/data";
 export const metadata = { title: `About | ${site.name}` };
+
 export default function About() {
   return (
     <section className="hero">
-      <h1>About</h1>
-      <p className="lead">{site.intro}</p>
+      <div className="eyebrow">About me</div>
+      <h1>Hi, I'm Bhaskar.</h1>
+      <div className="aboutGrid">
+        <article className="panel story">
+          {about.map((t, i) => <p key={i}>{t}</p>)}
+        </article>
+        <aside className="facts">
+          {facts.map(([k, v]) => <div className="panel" key={k}><small>{k}</small><b>{v}</b></div>)}
+        </aside>
+      </div>
       <h2>Education</h2>
-      <p>{site.university}, B.E. in Computer Engineering.</p>
-      <h2>Focus</h2>
-      <p>Machine learning, data analysis and turning models into usable apps.</p>
+      <div className="edu">
+        {education.map((e) => (
+          <div className="eduItem" key={e.title}>
+            <span className="dot" aria-hidden="true" />
+            <div className="panel">
+              <small>{e.note}</small>
+              <h3>{e.title}</h3>
+              <p>{e.school}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
