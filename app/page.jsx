@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Typing from "@/components/Typing";
 import Avatar from "@/components/Avatar";
+import SkillCards from "@/components/SkillCards";
 import ProjectCard from "@/components/ProjectCard";
 import { site, projects } from "@/lib/data";
 
@@ -19,6 +20,11 @@ export default function Home() {
         <Avatar name={site.name} />
       </section>
       <section>
+        <div className="eyebrow">What I work with</div>
+        <h2 style={{ marginTop: 0 }}>Skills</h2>
+        <SkillCards />
+      </section>
+      <section style={{ marginTop: 70 }}>
         <h2>Featured projects</h2>
         <div className="cards">{projects.map((p) => <ProjectCard key={p.slug} p={p} />)}</div>
       </section>
