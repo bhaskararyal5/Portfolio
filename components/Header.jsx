@@ -9,7 +9,7 @@ export default function Header() {
   const path = usePathname();
   const toggle = () => {
     const r = document.documentElement;
-    const dark = getComputedStyle(r).getPropertyValue("--bg").trim() === "#0d1514";
+    const dark = getComputedStyle(r).getPropertyValue("--bg").trim() === "#0b1220";
     r.dataset.theme = dark ? "light" : "dark";
   };
   return (
