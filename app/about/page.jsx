@@ -6,7 +6,7 @@ export default function About() {
       <h1>About</h1>
       <p className="lead">{site.intro}</p>
       <h2>Education</h2>
-      <p>{site.university}, B.E. in Computer Engineering. Replace this with your own story.</p>
+      <p>{site.university}, B.E. in Computer Engineering.</p>
       <h2>Focus</h2>
       <p>Machine learning, data analysis and turning models into usable apps.</p>
     </section>

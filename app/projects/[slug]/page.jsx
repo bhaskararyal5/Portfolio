@@ -16,6 +16,7 @@ export default async function Project({ params }) {
       <p style={{ marginTop: 32 }}>{p.kind}</p>
       <h1 style={{ fontSize: "clamp(32px,6vw,56px)" }}>{p.title}</h1>
       <p className="lead">{p.intro}</p>
+      <img className="cover" src={p.image} alt={`${p.title} cover`} />
       <div className="stats">{p.stats.map(([k, v]) => <div key={k}><small>{k}</small><b>{v}</b></div>)}</div>
       {p.sections.map(([h, parts]) => (
         <div key={h}>
