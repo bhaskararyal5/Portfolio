@@ -26,7 +26,7 @@ export default function Home() {
       </section>
       <section style={{ marginTop: 70 }}>
         <h2>Featured projects</h2>
-        <div className="cards">{projects.map((p) => <ProjectCard key={p.slug} p={p} />)}</div>
+        <div className="cards">{projects.filter((p) => p.featured).map((p) => <ProjectCard key={p.slug} p={p} />)}</div>
       </section>
     </>
   );

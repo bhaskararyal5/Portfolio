@@ -26,7 +26,7 @@ export default async function Project({ params }) {
             : <p key={i}>{x}</p>)}
         </div>
       ))}
-      <div className="row"><a className="btn primary" href={p.repo} target="_blank" rel="noopener noreferrer">View on GitHub</a></div>
+      <div className="row"><a className="btn primary" href={p.repo} target="_blank" rel="noopener noreferrer">{p.repoLabel || "View on GitHub"} ↗</a></div>
     </article>
   );
 }
