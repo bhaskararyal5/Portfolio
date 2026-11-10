@@ -21,6 +21,11 @@ export default function Contact() {
         <button className="btn primary" type="submit">Send message</button>
         <small>{sent ? "Your email app should open now." : "Opens your email app with the message filled in."}</small>
       </form>
+      <h2>Find me online</h2>
+      <div className="row">
+        <a className="btn" href={site.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a className="btn" href={site.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
     </section>
   );
 }
