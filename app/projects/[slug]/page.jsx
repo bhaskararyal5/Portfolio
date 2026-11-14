@@ -14,7 +14,7 @@ export default async function Project({ params }) {
     <article className="hero">
       <Link href="/projects" className="btn">Back to all projects</Link>
       <p style={{ marginTop: 32 }}>{p.kind}</p>
-      <h1 style={{ fontSize: "clamp(32px,6vw,56px)" }}>{p.title}</h1>
+      <h1 style={{ fontSize: "clamp(26px,4.4vw,40px)" }}>{p.title}</h1>
       <p className="lead">{p.intro}</p>
       <img className="cover" src={p.image} alt={`${p.title} cover`} />
       <div className="stats">{p.stats.map(([k, v]) => <div key={k}><small>{k}</small><b>{v}</b></div>)}</div>

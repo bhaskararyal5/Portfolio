@@ -101,3 +101,28 @@ footer{padding:0;margin-top:90px;background:color-mix(in srgb,var(--card) 55%,tr
 .fbottom{border-top:1px solid var(--line);padding:22px 0 30px;text-align:center;font-size:14px;color:var(--muted)}.fbottom b{color:var(--ink)}
 @media(max-width:900px){.foot{grid-template-columns:1fr 1fr;gap:34px}}
 @media(max-width:560px){.foot{grid-template-columns:1fr;padding:40px 0 30px}.fdesc{max-width:none}}
+/* Refined type scale: lighter and less bulky */
+body{font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1{font-size:clamp(28px,4.6vw,44px);font-weight:700;line-height:1.12;letter-spacing:-.03em;margin-bottom:18px}
+.heroGrid h1{font-size:clamp(28px,4.2vw,46px)}
+h2{font-size:22px;font-weight:700;margin:40px 0 12px;letter-spacing:-.015em}
+h3{font-weight:600}
+.lead,.heroGrid .lead{font-size:16.5px;line-height:1.7;max-width:58ch}
+.hero{padding:9vh 0 6vh}
+.eyebrow{font-size:12px;letter-spacing:.14em}
+nav a{font-size:14px;font-weight:500}.logo{font-size:17px}
+button,.btn{font-size:15px;font-weight:500;padding:9px 18px}.btn.primary{font-weight:600}
+.item h3,.pcard h3{font-size:18px}.pcard p,.item p{font-size:14.5px;line-height:1.6}
+.story p{font-size:16.5px}.stats b{font-size:16px}.stats small{font-size:12px}
+.skHead h3{font-size:16px}.sk p{font-size:13.5px}.eduItem h3{font-size:17px}
+article.hero p,article.hero li{font-size:16px}
+.fbrand{font-size:19px}.fdesc{font-size:14.5px}.foot ul a{font-size:14.5px}
+@media(max-width:760px){.hero{padding:5vh 0 4vh}h1{font-size:28px}.heroGrid h1{font-size:28px}}
+/* Wider layout: use more of the screen */
+.wrap{max-width:1360px;padding-left:clamp(20px,4vw,64px);padding-right:clamp(20px,4vw,64px)}
+.heroGrid{gap:clamp(32px,6vw,96px)}
+.avatar{width:clamp(180px,28vw,340px)}
+.cards{grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:24px}
+.skillGrid{gap:20px}
+.aboutGrid{gap:28px}
+@media(max-width:760px){.heroGrid .avatar{width:150px}}

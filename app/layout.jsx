@@ -1,10 +1,10 @@
 import "./globals.css";
-import { Bricolage_Grotesque } from "next/font/google";
+import { Manrope } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { site } from "@/lib/data";
 
-const font = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font" });
+const font = Manrope({ subsets: ["latin"], variable: "--font" });
 
 export const metadata = {
   title: `${site.name} | ${site.role}`,
