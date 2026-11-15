@@ -25,6 +25,8 @@ export default function Contact() {
       <div className="row">
         <a className="btn" href={site.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
         <a className="btn" href={site.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a className="btn" href={site.instagram} target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        <a className="btn" href={site.facebook} target="_blank" rel="noopener noreferrer">Facebook ↗</a>
       </div>
     </section>
   );

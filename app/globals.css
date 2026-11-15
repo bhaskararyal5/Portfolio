@@ -126,3 +126,4 @@ article.hero p,article.hero li{font-size:16px}
 .skillGrid{gap:20px}
 .aboutGrid{gap:28px}
 @media(max-width:760px){.heroGrid .avatar{width:150px}}
+video.cover{background:#000;aspect-ratio:16/9;object-fit:contain}
