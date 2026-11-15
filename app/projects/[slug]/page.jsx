@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import ProjectVideo from "@/components/ProjectVideo";
 import { projects } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -17,7 +18,7 @@ export default async function Project({ params }) {
       <h1 style={{ fontSize: "clamp(26px,4.4vw,40px)" }}>{p.title}</h1>
       <p className="lead">{p.intro}</p>
       {p.video
-        ? <video className="cover" controls playsInline preload="metadata" poster={p.image}><source src={p.video} type="video/webm" />Your browser cannot play this video.</video>
+        ? <ProjectVideo src={p.video} poster={p.image} />
         : <img className="cover" src={p.image} alt={`${p.title} cover`} />}
       <div className="stats">{p.stats.map(([k, v]) => <div key={k}><small>{k}</small><b>{v}</b></div>)}</div>
       {p.sections.map(([h, parts]) => (
