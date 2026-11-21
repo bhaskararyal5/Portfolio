@@ -1,4 +1,4 @@
-import { site, about, education, facts } from "@/lib/data";
+import { site, about, education } from "@/lib/data";
 export const metadata = { title: `About | ${site.name}` };
 
 export default function About() {
@@ -7,13 +7,12 @@ export default function About() {
       <div className="eyebrow">About me</div>
       <h1>Hi, I'm Bhaskar.</h1>
       <div className="aboutGrid">
+        <aside>
+          <img className="aboutPhoto" src="/profile.jpg" alt={`Photo of ${site.name}`} />
+        </aside>
         <article className="panel story">
           {about.map((t, i) => <p key={i}>{t}</p>)}
         </article>
-        <aside className="facts">
-          <img className="aboutPhoto" src="/profile.jpg" alt={`Photo of ${site.name}`} />
-          {facts.map(([k, v]) => <div className="panel" key={k}><small>{k}</small><b>{v}</b></div>)}
-        </aside>
       </div>
       <h2>Education</h2>
       <div className="edu">
