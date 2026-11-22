@@ -2,6 +2,7 @@ import "./globals.css";
 import { Manrope } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 import { site } from "@/lib/data";
 
 const font = Manrope({ subsets: ["latin"], variable: "--font" });
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main className="wrap">{children}</main>
         <Footer />
+        <ScrollReveal />
       </body>
     </html>
   );
