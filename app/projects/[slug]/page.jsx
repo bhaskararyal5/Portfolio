@@ -29,7 +29,9 @@ export default async function Project({ params }) {
             : <p key={i}>{x}</p>)}
         </div>
       ))}
-      <div className="row"><a className="btn primary" href={p.repo} target="_blank" rel="noopener noreferrer">{p.repoLabel || "View on GitHub"} ↗</a></div>
+      <div className="row">
+        {p.demo && <a className="btn primary" href={p.demo} target="_blank" rel="noopener noreferrer">Try the live demo ↗</a>}
+        <a className={`btn${p.demo ? "" : " primary"}`} href={p.repo} target="_blank" rel="noopener noreferrer">{p.repoLabel || "View on GitHub"} ↗</a></div>
     </article>
   );
 }
