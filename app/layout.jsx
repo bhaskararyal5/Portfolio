@@ -3,6 +3,7 @@ import { Manrope } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
+import NeuralBackground from "@/components/NeuralBackground";
 import { site } from "@/lib/data";
 
 const font = Manrope({ subsets: ["latin"], variable: "--font" });
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={font.variable}>
       <body>
+        <NeuralBackground />
         <Header />
         <main className="wrap">{children}</main>
         <Footer />
