@@ -65,15 +65,45 @@ article.hero p,article.hero li{font-size:16px}
 .bar{height:6px;background:var(--line);border-radius:9px;overflow:hidden;margin-top:12px}
 .bar i{display:block;height:100%;background:var(--accent);transform-origin:left;animation:grow 1.1s ease-out both}
 @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-/* Skills page: topic on the left, skills on the right */
-.skillStack{display:grid;gap:16px;margin-top:24px}
-.skRow{display:grid;grid-template-columns:minmax(240px,.8fr) 1.6fr;gap:32px;align-items:center;padding:22px 26px}.skRow:hover{transform:none}
-.skMain p{margin:8px 0 0;font-size:14.5px}.skMain .bar{height:6px;margin-top:14px}
-.skMain .skHead h3{font-size:18px}.skMain .badge{min-width:40px;height:40px;font-size:13px}
-.pills{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
-.pills li{margin:0;padding:8px 16px;border:1px solid var(--line);border-radius:99px;font-size:14.5px;font-weight:500;color:var(--ink);background:color-mix(in srgb,var(--bg) 40%,transparent);transition:border-color .2s,transform .2s,color .2s}
-.pills li:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+/* Skills explorer */
+.skLayout{display:grid;grid-template-columns:300px 1fr;gap:24px;margin-top:28px;align-items:start}
+.skTabs{display:grid;gap:10px}
+.skTab{display:flex;align-items:center;gap:14px;width:100%;text-align:left;padding:14px 16px;border-radius:14px;background:color-mix(in srgb,var(--card) 70%,transparent)}
+.skTab .badge{min-width:40px;height:40px;font-size:13px;background:var(--line);color:var(--ink);transition:background .2s,color .2s}
+.skTabText{display:grid;line-height:1.3}.skTabText b{font-size:15px;font-weight:600}.skTabText small{color:var(--muted);font-size:12.5px}
+.skTab.on{border-color:var(--accent);background:var(--card);box-shadow:0 8px 24px color-mix(in srgb,var(--accent) 18%,transparent)}
+.skTab.on .badge{background:var(--accent);color:var(--accent-ink)}
+.skPanel{padding:30px;min-height:300px;animation:panelIn .35s ease both}.skPanel:hover{transform:none}
+@keyframes panelIn{from{opacity:0;transform:translateY(10px)}}
+.skPanelTop{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.skTitle{margin:0 0 6px;font-size:26px;letter-spacing:-.02em}.skPanelTop p{margin:0;max-width:44ch}
+.ring{position:relative;flex:none;width:110px;height:110px}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:9;stroke-linecap:round}
+.rbg{stroke:var(--line)}.rfg{stroke:var(--accent);animation:ring 1.2s ease-out both}
+@keyframes ring{from{stroke-dashoffset:327}}
+.ring span{position:absolute;inset:0;display:grid;place-items:center;font-weight:700;font-size:20px;color:var(--ink)}
+.tiles{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.tiles li{margin:0;display:flex;align-items:center;gap:10px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;font-weight:600;font-size:15px;color:var(--ink);background:color-mix(in srgb,var(--bg) 45%,transparent);animation:tileIn .45s ease both;transition:border-color .2s,transform .2s,color .2s}
+.tiles li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none}
+.tiles li:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-3px)}
+@keyframes tileIn{from{opacity:0;transform:translateY(12px)}}
 /* Contact */
+.ctGrid{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;margin-top:32px;align-items:start}
+.ctLeft{display:grid;gap:12px}
+.ctMail,.ctLink{display:flex;align-items:center;gap:14px;padding:14px 18px;text-decoration:none;color:inherit}
+.ctLink:hover{transform:translateX(4px)}
+.ctIcon{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);flex:none}
+.ctText{display:grid;min-width:0;line-height:1.35}.ctText small{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.1em}
+.ctText b,.ctText a{font-weight:600;color:var(--ink);text-decoration:none;overflow-wrap:anywhere}.ctText a:hover{color:var(--accent)}
+.ctMail .ctText{flex:1}.copyBtn{padding:7px 14px;font-size:13.5px}
+.ctArrow{margin-left:auto;color:var(--muted);transition:transform .2s,color .2s}.ctLink:hover .ctArrow{color:var(--accent);transform:translate(3px,-3px)}
+.cform{display:grid;gap:14px;max-width:none;padding:28px}.cform:hover{transform:none}
+.cform h2{margin:0 0 4px}.cform label{display:grid;gap:6px;font-size:13.5px;font-weight:600;color:var(--ink)}
+.cform input,.cform textarea{font-weight:400;font-size:15px;transition:border-color .2s,box-shadow .2s}
+.cform input:focus,.cform textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 22%,transparent)}
+.cform textarea{resize:vertical}.cform .note{color:var(--muted)}
+/* end contact */
 form{display:grid;gap:12px;max-width:520px}
 input,textarea{font:inherit;width:100%;padding:12px 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
 /* Footer */
@@ -114,6 +144,8 @@ nav a:not(.logo):hover::after,nav a[aria-current=page]::after{transform:scaleX(1
 .rv{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0ms)}
 .rv.in{opacity:1;transform:none}
 @media(max-width:1000px){.skillGrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.skLayout{grid-template-columns:1fr}.skTabs{display:flex;overflow-x:auto;gap:10px;padding-bottom:4px}.skTab{width:auto;flex:none}.ctGrid{grid-template-columns:1fr}}
+@media(max-width:560px){.skPanelTop{flex-direction:column-reverse;align-items:flex-start}.skPanel{padding:22px}}
 /* Home skill cards: bars aligned at the bottom of every card */
 .sk{display:flex;flex-direction:column}
 .sk .chips{margin-bottom:14px}

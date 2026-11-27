@@ -1,4 +1,4 @@
-import SkillDetails from "@/components/SkillDetails";
+import SkillsExplorer from "@/components/SkillsExplorer";
 import { site } from "@/lib/data";
 export const metadata = { title: `Skills | ${site.name}` };
 
@@ -7,7 +7,8 @@ export default function Skills() {
     <section className="hero">
       <div className="eyebrow">What I work with</div>
       <h1>Skills</h1>
-      <SkillDetails />
+      <p className="lead">Pick a category to see what is inside it.</p>
+      <SkillsExplorer />
     </section>
   );
 }
