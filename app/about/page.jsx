@@ -1,3 +1,7 @@
+// app/about/page.jsx  ->  the ABOUT page (address: /about)
+// Photo on the left, bio on the right, then the education timeline.
+// Text comes from "about" and "education" in lib/data.js.
+// The photo is public/profile.jpg.
 import { site, about, education } from "@/lib/data";
 export const metadata = { title: `About | ${site.name}` };
 

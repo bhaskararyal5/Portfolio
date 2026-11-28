@@ -1,3 +1,5 @@
+// app/skills/page.jsx  ->  the SKILLS page (address: /skills)
+// Just a title; the clickable categories are in components/SkillsExplorer.jsx.
 import SkillsExplorer from "@/components/SkillsExplorer";
 import { site } from "@/lib/data";
 export const metadata = { title: `Skills | ${site.name}` };

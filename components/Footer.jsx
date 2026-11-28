@@ -1,3 +1,6 @@
+// components/Footer.jsx
+// The four-column footer: about text, directory links, case studies
+// (built automatically from your projects) and social icons.
 import Link from "next/link";
 import { site, projects } from "@/lib/data";
 import { GitHub, LinkedIn, Instagram, Facebook } from "@/components/icons";

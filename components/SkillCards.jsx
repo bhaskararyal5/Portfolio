@@ -1,3 +1,6 @@
+// components/SkillCards.jsx
+// The compact skill cards on the HOME page (title, tags, progress bar).
+// Data comes from "skills" in lib/data.js.
 import { skills } from "@/lib/data";
 
 export default function SkillCards() {

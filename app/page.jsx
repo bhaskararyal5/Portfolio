@@ -1,3 +1,6 @@
+// app/page.jsx  ->  the HOME page (address: /)
+// Order on screen: intro + photo, Skills cards, Featured projects.
+// Only projects with featured: true in lib/data.js appear here.
 import Link from "next/link";
 import Typing from "@/components/Typing";
 import Avatar from "@/components/Avatar";

@@ -1,4 +1,9 @@
 "use client";
+// components/NeuralBackground.jsx
+// The animated network background. To tune it: LINK = how far apart two
+// dots can be and still join, the numbers 95 / 17000 control how many
+// dots appear, and the alpha values (0.28, 0.55, 0.65) set how bright
+// the lines and dots are. The soft glows are CSS (.orb in globals.css).
 import { useEffect, useRef } from "react";
 
 // A living "neural network" backdrop: drifting nodes joined by faint links,

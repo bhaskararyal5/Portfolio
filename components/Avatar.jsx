@@ -1,4 +1,7 @@
 "use client";
+// components/Avatar.jsx
+// The round photo on the home page. It loads public/profile.jpg
+// and shows your initials if that file is missing.
 import { useEffect, useState } from "react";
 
 // Your photo is public/profile.jpg. If it is missing, your initials show.

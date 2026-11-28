@@ -1,4 +1,7 @@
 "use client";
+// components/Header.jsx
+// The top menu bar. To add or remove a menu item, edit the "links" list.
+// It also holds the light/dark Theme button.
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { site } from "@/lib/data";

@@ -1,4 +1,7 @@
 "use client";
+// components/SkillsExplorer.jsx
+// The clickable category list + detail panel on the SKILLS page.
+// Data comes from "skills" in lib/data.js; "level" draws the ring.
 import { useState } from "react";
 import { skills } from "@/lib/data";
 

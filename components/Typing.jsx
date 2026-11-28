@@ -1,4 +1,7 @@
 "use client";
+// components/Typing.jsx
+// The typing animation in the home headline. The words it cycles
+// through are "site.tagline" in lib/data.js.
 import { useEffect, useState } from "react";
 
 export default function Typing({ words }) {

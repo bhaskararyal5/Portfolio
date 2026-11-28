@@ -1,4 +1,8 @@
 "use client";
+// components/ProjectCard.jsx
+// One project card (used on Home and Projects). If the project has a
+// video, hovering or touching the card plays the first few seconds.
+// Change PREVIEW_SECONDS below to make the preview longer or shorter.
 import Link from "next/link";
 import { useRef, useState } from "react";
 

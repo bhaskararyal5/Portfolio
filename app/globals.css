@@ -1,3 +1,13 @@
+/* =====================================================================
+   app/globals.css  |  ALL OF THE SITE'S STYLING
+   - Colors live in the :root blocks right below (light theme first,
+     dark theme second). Change --accent to recolor the whole site.
+   - Search for the section labels (comments) to jump around:
+     page layout, hero, projects, About, skills, contact, footer,
+     animations (hover, scroll reveal, background) and Responsive
+     (the phone/tablet rules at the bottom).
+   - Class names match the className="..." used in the .jsx files.
+   ===================================================================== */
 :root{--bg:#f1f4f9;--card:#fff;--ink:#121a2b;--muted:#55627a;--line:#d8dfec;--accent:#1d4ed8;--accent-ink:#fff;--g1:rgba(29,78,216,.20);--g2:rgba(110,161,255,.28)}
 @media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0b1220;--card:#111a2e;--ink:#e8eefb;--muted:#93a1bd;--line:#22304d;--accent:#6ea1ff;--accent-ink:#07142e;--g1:rgba(60,110,255,.28);--g2:rgba(110,161,255,.12)}}
 :root[data-theme=dark]{--bg:#0b1220;--card:#111a2e;--ink:#e8eefb;--muted:#93a1bd;--line:#22304d;--accent:#6ea1ff;--accent-ink:#07142e;--g1:rgba(60,110,255,.28);--g2:rgba(110,161,255,.12)}

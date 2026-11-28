@@ -1,3 +1,8 @@
+// app/projects/[slug]/page.jsx  ->  ONE project's case-study page
+// The folder name [slug] is a placeholder: /projects/mindscore,
+// /projects/nyc-airbnb-classifier etc. are all built from this single
+// file, using the matching entry in lib/data.js.
+// To add a new project page, you only add a new entry to "projects".
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ProjectVideo from "@/components/ProjectVideo";

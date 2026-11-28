@@ -1,4 +1,8 @@
 "use client";
+// app/contact/page.jsx  ->  the CONTACT page (address: /contact)
+// Left: email (with Copy button) and social cards. Right: message form.
+// The form opens the visitor's email app addressed to site.email.
+// Email and links are set in lib/data.js.
 import { useState } from "react";
 import { site } from "@/lib/data";
 import { Mail, GitHub, LinkedIn, Instagram, Facebook } from "@/components/icons";

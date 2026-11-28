@@ -1,4 +1,8 @@
 "use client";
+// components/ScrollReveal.jsx
+// Makes headings, cards and sections fade in as you scroll down.
+// It adds/removes CSS classes ("rv" and "in"); the animation itself
+// is the "Gentle scroll reveal" block in app/globals.css.
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
